@@ -1,28 +1,29 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-
 }
-.container{
+
+.container {
+    width: 100%;
     padding: 10px;
 }
-.display{
+
+.display {
     width: 98%;
     height: 35px;
     font-size: 25px;
     text-align: right;
 }
 
-.calculadora{
-    width: 500px;
+.calculadora {
+    width: 100%;
     height: 400px;
-     padding: 10px;
-
+    padding: 10px;
 }
 
-.btn{
+.btn {
     width: 100%;
     height: 100%;
     font-size: 27px;
@@ -31,20 +32,30 @@ body{
     background: #dfdfdf;
 }
 
-.btn:hover{
+.btn:hover {
     background: #c4c4c4;
 }
 
-.btn-equal{
-    background-color:  rgb(28, 225, 44);
-}
-.btn-equal:hover{
-    background-color:rgb(75, 207, 73);
+.btn-equal {
+    background-color: rgb(28, 225, 44);
 }
 
-.btn-del{
+.btn-equal:hover {
+    background-color: rgb(75, 207, 73);
+}
+
+.btn-del {
     background-color: #f88989;
 }
-.btn-clear{
+
+.btn-clear {
     background-color: rgb(202, 30, 30);
+}
+
+/* Media Query para telas menores que 600px */
+@media (min-width: 600px) {
+    .container {
+       width: 550px;
+        
+    }
 }
